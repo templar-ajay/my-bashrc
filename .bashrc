@@ -15,4 +15,7 @@ hack() {
 }
 
 # enter themes set by Local
-alias themes="cd ~/Local\ Sites/test/app/public/wp-content/themes"
+hack() {
+code "$@"
+exit
+}
