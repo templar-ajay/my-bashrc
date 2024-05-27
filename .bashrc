@@ -4,18 +4,11 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(thefuck --alias)"
 
-# alis to open a folder in vscode 
-hack() {
-  if [[ "$1" == "-r" ]]; then
-    code "$2" -r
-  else
-    code "$1"
-  fi
-  exit
-}
-
-# enter themes set by Local
+# alis to open a folder in vscode and exit the terminal
 hack() {
 code "$@"
 exit
 }
+
+# alias to open the themes folder made by local wp
+alias themes="cd ~/Local\ Sites/test/app/public/wp-content/themes"
